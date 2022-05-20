@@ -1,8 +1,15 @@
 {
   "name": "limestonesoftware/granite",
-  "type": "theme",
+  "type": "library",
   "description": "Mason CMS default theme",
   "keywords": ["framework", "laravel", "cms", "mason", "theme"],
+  "authors": [
+    {
+      "name": "Jonathan Roy",
+      "email": "jonathan@limestone.dev",
+      "role": "developer"
+    }
+  ],
   "license": "MIT",
   "require": {
     "php": "^8.0"
