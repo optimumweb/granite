@@ -1,5 +1,5 @@
 @extends('layouts.default')
 
 @section('content')
-    <h2>{{ $page }}</h2>
+    <h2>{{ $content }}</h2>
 @endsection
