@@ -1,3 +1,3 @@
 <header id="site-header">
-    <h1>{{ config('app.name') }}</h1>
+    <h1>{{ config('site.name') }}</h1>
 </header>
