@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="column is-8">
-                        {{ $site->menu('primary')->render() }}
+                        {!! $site->menu('primary')->render() !!}
                     </div>
                 </div>
             </div>
