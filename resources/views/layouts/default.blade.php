@@ -11,34 +11,38 @@
         <script src="{{ theme_asset('js/theme.js') }}" defer></script>
     </head>
     <body>
-        <header id="site-header">
-            <div class="columns">
-                <div class="column is-4">
+        <header id="site-header" class="hero">
+            <div class="hero-body">
+                <div class="columns">
+                    <div class="column is-4">
 
-                </div>
+                    </div>
 
-                <div class="column is-4 has-text-centered">
-                    <h1 id="site-name" class="title is-1">
-                        {{ config('site.name') }}
-                    </h1>
+                    <div class="column is-4 has-text-centered">
+                        <h1 id="site-name" class="title">
+                            {{ config('site.name') }}
+                        </h1>
 
-                    <h2 id="site-description" class="subtitle">
-                        {{ config('site.description') }}
-                    </h2>
-                </div>
+                        <h2 id="site-description" class="subtitle">
+                            {{ config('site.description') }}
+                        </h2>
+                    </div>
 
-                <div class="column is-4">
+                    <div class="column is-4">
 
+                    </div>
                 </div>
             </div>
         </header>
 
-        <main id="site-content">
+        <main id="site-content" class="section">
             @yield('content')
         </main>
 
-        <footer id="site-footer" class="has-text-centered">
-            <p id="copy">&copy; {{ config('site.name') }} {{ now()->format('Y') }}</p>
+        <footer id="site-footer" class="footer">
+            <div class="content has-text-centered">
+                <p id="copy">&copy; {{ config('site.name') }} {{ now()->format('Y') }}</p>
+            </div>
         </footer>
     </body>
 </html>
