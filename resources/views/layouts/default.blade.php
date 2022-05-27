@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', $locale) }}">
+<html lang="{{ str_replace('_', '-', $site->locale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
                 <div class="columns">
                     <div class="column is-4">
                         <h1 id="site-name" class="title">
-                            <a href="{{ $site->home($locale) }}">
+                            <a href="{{ $site->home() }}">
                                 {{ $site->name() }}
                             </a>
                         </h1>
