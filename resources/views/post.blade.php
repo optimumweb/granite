@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <article class="entry post">
+    <article class="entry post box block">
         <h2 class="entry-title">
             {!! $entry->title !!}
         </h2>

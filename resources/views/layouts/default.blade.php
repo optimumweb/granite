@@ -15,10 +15,6 @@
             <div class="hero-body">
                 <div class="columns">
                     <div class="column is-4">
-
-                    </div>
-
-                    <div class="column is-4 has-text-centered">
                         <h1 id="site-name" class="title">
                             <a href="{{ $site->home($locale) }}">
                                 {{ $site->name() }}
@@ -30,7 +26,7 @@
                         </h2>
                     </div>
 
-                    <div class="column is-4">
+                    <div class="column is-8">
 
                     </div>
                 </div>
