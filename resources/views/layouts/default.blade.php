@@ -11,7 +11,7 @@
         <script src="{{ theme_asset('js/theme.js') }}" defer></script>
     </head>
     <body>
-        <header id="site-header" class="hero">
+        <header id="site-header" class="hero is-primary">
             <div class="hero-body">
                 <div class="columns">
                     <div class="column is-4">
@@ -35,7 +35,7 @@
             </div>
         </header>
 
-        <main id="site-content" class="section">
+        <main id="site-content">
             @yield('content')
         </main>
 
