@@ -6,9 +6,9 @@
 
         <title>{{ config('site.name') }}</title>
 
-        <link rel="stylesheet" href="{{ theme_public_path('css/theme.css') }}">
+        <link rel="stylesheet" href="{{ theme_asset('css/theme.css') }}">
 
-        <script src="{{ theme_public_path('js/theme.js') }}" defer></script>
+        <script src="{{ theme_asset('js/theme.js') }}" defer></script>
     </head>
     <body>
         <header id="site-header">
