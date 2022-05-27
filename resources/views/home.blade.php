@@ -3,7 +3,7 @@
 @section('content')
     <section class="section">
         <div class="container">
-            @foreach(\App\Models\Entry::byType('post')->get() as $post)
+            @foreach(site()->entries('post')->get() as $post)
                 <article
                         id="entry-{{ $post->id }}"
                         class="entry post box block"
