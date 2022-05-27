@@ -13,7 +13,9 @@
                     class="title is-2 entry-title"
                     itemprop="headline"
                 >
-                    {!! $post->title !!}
+                    <a href="{!! $post->url !!}">
+                        {!! $post->title !!}
+                    </a>
                 </h2>
 
                 <div class="entry-meta">
