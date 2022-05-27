@@ -1,5 +1,9 @@
 @extends('layouts.default')
 
 @section('content')
-    <h2>{{ $entry->title }}</h2>
+    <section class="section">
+        <div class="container">
+            @include('partials.page');
+        </div>
+    </section>
 @endsection

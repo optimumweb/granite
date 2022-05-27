@@ -1,5 +1,5 @@
 <article
-    id="entry-{{ $post->id }}"
+    id="entry-{{ $entry->id }}"
     class="entry post box block"
     itemscope
     itemtype="https://schema.org/Article"
@@ -8,8 +8,8 @@
         class="title is-2 entry-title"
         itemprop="headline"
     >
-        <a href="{!! $post->url !!}">
-            {!! $post->title !!}
+        <a href="{!! $entry->url !!}">
+            {!! $entry->title !!}
         </a>
     </h2>
 
@@ -18,14 +18,14 @@
             class="entry-published-at"
             itemprop="datePublished"
         >
-            {{ $post->published_at }}
+            {{ $entry->published_at }}
         </span>
 
         <span
             class="entry-author"
             itemprop="author"
         >
-            {{ $post->author }}
+            {{ $entry->author }}
         </span>
     </div>
 
@@ -33,6 +33,6 @@
         class="entry-content content"
         itemprop="articleBody"
     >
-        {!! $post->content !!}
+        {!! $entry->content !!}
     </div>
 </article>

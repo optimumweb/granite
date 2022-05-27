@@ -3,7 +3,7 @@
 @section('content')
     <section class="section">
         <div class="container">
-            @foreach(site()->entries('post')->get() as $post)
+            @foreach(site()->entries('post')->get() as $entry)
                 @include('partials.post')
             @endforeach
         </div>
