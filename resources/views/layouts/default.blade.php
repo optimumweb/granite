@@ -20,7 +20,9 @@
 
                     <div class="column is-4 has-text-centered">
                         <h1 id="site-name" class="title">
-                            {{ $site->name() }}
+                            <a href="{{ $site->home() }}">
+                                {{ $site->name() }}
+                            </a>
                         </h1>
 
                         <h2 id="site-description" class="subtitle">
