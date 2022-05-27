@@ -5,10 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('site.name') }}</title>
+
+        <link rel="stylesheet" href="{{ mix('css/theme.css') }}">
+
+        <script src="{{ mix('js/theme.js') }}" defer></script>
     </head>
     <body>
-        @include('partials.header')
+        <header id="site-header">
+            <h1>{{ config('site.name') }}</h1>
+        </header>
 
-        @yield('content')
+        <main id="site-content">
+            @yield('content')
+        </main>
     </body>
 </html>
