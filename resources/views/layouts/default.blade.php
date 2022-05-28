@@ -24,7 +24,7 @@
                                         </a>
                                     </h1>
 
-                                    <h2 id="site-description" class="subtitle">
+                                    <h2 id="site-description">
                                         {{ $site->description }}
                                     </h2>
                                 </div>
