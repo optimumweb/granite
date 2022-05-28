@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $this->locale->html_lang }}">
+<html lang="{{ $site->locale->html_lang }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
