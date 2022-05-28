@@ -1,7 +1,6 @@
 <nav class="menu" role="navigation">
     <ul>
         @foreach($menu->items()->top()->get() as $item)
-            {{ $item->render() }}
             <li>
                 <a href="{{ $item->target }}">
                     {{ $item }}
