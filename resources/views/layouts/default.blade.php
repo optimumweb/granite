@@ -17,15 +17,17 @@
                     <div class="level">
                         <div class="level-left">
                             <div class="level-item">
-                                <h1 id="site-name" class="title">
-                                    <a href="{{ $site->home() }}">
-                                        {{ $site->name }}
-                                    </a>
-                                </h1>
+                                <div id="site-header">
+                                    <h1 id="site-name" class="title">
+                                        <a href="{{ $site->home() }}">
+                                            {{ $site->name }}
+                                        </a>
+                                    </h1>
 
-                                <h2 id="site-description" class="subtitle">
-                                    {{ $site->description }}
-                                </h2>
+                                    <h2 id="site-description" class="subtitle">
+                                        {{ $site->description }}
+                                    </h2>
+                                </div>
                             </div>
                         </div>
 
