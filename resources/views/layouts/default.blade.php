@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $site->locale->html_lang }}">
+<html lang="{{ $site->locale->name }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,21 +13,27 @@
     <body>
         <header id="site-header" class="hero is-primary">
             <div class="hero-body">
-                <div class="columns">
-                    <div class="column is-4">
-                        <h1 id="site-name" class="title">
-                            <a href="{{ $site->home() }}">
-                                {{ $site->name }}
-                            </a>
-                        </h1>
+                <div class="container">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <h1 id="site-name" class="title">
+                                    <a href="{{ $site->home() }}">
+                                        {{ $site->name }}
+                                    </a>
+                                </h1>
 
-                        <h2 id="site-description" class="subtitle">
-                            {{ $site->description }}
-                        </h2>
-                    </div>
+                                <h2 id="site-description" class="subtitle">
+                                    {{ $site->description }}
+                                </h2>
+                            </div>
+                        </div>
 
-                    <div class="column is-8">
-                        {!! $site->menu('primary')->render() !!}
+                        <div class="level-right">
+                            <div class="level-item">
+                                {!! $site->menu('primary')->render() !!}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
