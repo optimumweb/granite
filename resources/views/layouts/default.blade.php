@@ -33,7 +33,7 @@
 
                         <div class="level-right">
                             <div class="level-item">
-                                {!! $site->renderMenu('primary') !!}
+                                {!! $site->menu('primary') !!}
                             </div>
                         </div>
                     </div>
