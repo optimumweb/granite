@@ -1,0 +1,13 @@
+{
+  "name": "limestonesoftware/granite",
+  "menuLocations": [
+    {
+      "name": "primary",
+      "title": "Primary Menu"
+    },
+    {
+      "name": "footer",
+      "title": "Footer Menu"
+    }
+  ]
+}
