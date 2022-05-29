@@ -1,9 +1,8 @@
 <li>
     <a
         href="{{ $item->target }}"
-        @if ($rel = $item->getMeta('rel'))
-            rel="{{ $rel }}"
-        @endif
+        class="{{ $item->metadata['class'] ?? '' }}"
+        rel="{{ $item->metadata['rel'] ?? '' }}"
     >
         {{ $item }}
     </a>
