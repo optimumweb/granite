@@ -1,23 +1,11 @@
-<nav class="menu" role="navigation">
+<nav
+    id="menu-{{ $menu->name }}"
+    class="menu"
+    role="navigation"
+>
     <ul>
         @foreach($menu->items()->top()->get() as $item)
-            <li>
-                <a href="{{ $item->target }}">
-                    {{ $item }}
-                </a>
-
-                @if ($item->children->count() > 0)
-                    <ul>
-                        @foreach($item->children as $item)
-                            <li>
-                                <a href="{{ $item->target }}">
-                                    {{ $item }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                @endif
-            </li>
+            @include('menu.item', ['item' => $item, 'depth' => 0])
         @endforeach
     </ul>
 </nav>
