@@ -3,6 +3,7 @@
         href="{{ $item->target }}"
         class="{{ $item->metadata['class'] ?? '' }}"
         rel="{{ $item->metadata['rel'] ?? '' }}"
+        target="{{ $item->metadata['target'] ?? '_self' }}"
     >
         {{ $item }}
     </a>
