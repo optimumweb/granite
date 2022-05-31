@@ -1,6 +1,6 @@
 <li>
     <a
-        href="{{ $item->target }}"
+        href="{{ $item->href }}"
         class="{{ $item->metadata['class'] ?? '' }}"
         rel="{{ $item->metadata['rel'] ?? '' }}"
         target="{{ $item->metadata['target'] ?? '_self' }}"
