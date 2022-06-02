@@ -9,5 +9,8 @@
       "name": "footer",
       "title": "Footer Menu"
     }
-  ]
+  ],
+  "config": {
+    "fontawesome": "46ebbae3fa"
+  }
 }
