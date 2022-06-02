@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="{{ $site->theme->asset('css/theme.css') }}">
 
-        @if ($fontawesome = $site->config('fontawesome'))
+        @if ($fontawesome = $site->theme->config('fontawesome'))
             <script src="https://kit.fontawesome.com/{{ $fontawesome }}.js" crossorigin="anonymous"></script>
         @endif
 
