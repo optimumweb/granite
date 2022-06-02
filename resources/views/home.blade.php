@@ -8,7 +8,7 @@
                     @include('partials.post')
                 @endforeach
 
-                {{ $posts->appends(request()->input())->links() }}
+                {{ $posts->appends(request()->input())->links('partials.pagination') }}
             @endif
         </div>
     </section>
