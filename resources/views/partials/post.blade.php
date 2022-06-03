@@ -13,7 +13,7 @@
         </a>
     </h2>
 
-    <div class="entry-meta">
+    <div class="entry-meta block">
         <span
             class="entry-published-at"
             itemprop="datePublished"
@@ -30,7 +30,7 @@
     </div>
 
     <div
-        class="entry-content content"
+        class="entry-content content block"
         itemprop="articleBody"
     >
         {!! $entry->content !!}
