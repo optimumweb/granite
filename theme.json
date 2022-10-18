@@ -13,6 +13,8 @@
   "settings": [
     {
       "name": "logo",
+      "title": "Logo",
+      "help": "Upload your site's logo file",
       "type": "file"
     }
   ],
