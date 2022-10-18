@@ -10,7 +10,13 @@
       "title": "Footer Menu"
     }
   ],
+  "settings": [
+    {
+      "name": "logo",
+      "type": "file"
+    }
+  ],
   "config": {
-    "fontawesome": "46ebbae3fa"
+    "fontawesome": "54c8dbf8b5"
   }
 }
