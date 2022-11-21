@@ -13,20 +13,26 @@
         </a>
     </h2>
 
-    <div class="entry-meta block">
-        <span
-            class="entry-published-at"
-            itemprop="datePublished"
-        >
-            {{ $entry->published_at }}
-        </span>
+    <div class="entry-meta level block">
+        <div class="level-left">
+            <div class="level-item">
+                <span
+                    class="entry-published-at"
+                    itemprop="datePublished"
+                >
+                    {{ $entry->published_at }}
+                </span>
+            </div>
 
-        <span
-            class="entry-author"
-            itemprop="author"
-        >
-            {{ $entry->author }}
-        </span>
+            <div class="level-item">
+                <span
+                    class="entry-author"
+                    itemprop="author"
+                >
+                    {{ $entry->author }}
+                </span>
+            </div>
+        </div>
     </div>
 
     @isset($entry->cover, $entry->cover->url)
