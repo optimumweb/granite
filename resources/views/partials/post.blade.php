@@ -29,6 +29,15 @@
         </span>
     </div>
 
+    @isset($entry->cover, $entry->cover->url)
+        <figure class="entry-cover image">
+            <img
+                src="{{ $entry->cover->url }}"
+                alt="{{ $entry->title }}"
+            />
+        </figure>
+    @endisset
+
     <div
         class="entry-content content block"
         itemprop="articleBody"
