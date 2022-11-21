@@ -16,6 +16,8 @@
     <div class="entry-meta level block">
         <div class="level-left">
             <div class="level-item">
+                <span class="icon"><i class="fas fa-calendar"></i></span>
+
                 <span
                     class="entry-published-at"
                     itemprop="datePublished"
@@ -25,6 +27,8 @@
             </div>
 
             <div class="level-item">
+                <span class="icon"><i class="fas fa-user"></i></span>
+
                 <span
                     class="entry-author"
                     itemprop="author"
