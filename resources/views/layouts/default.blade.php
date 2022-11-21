@@ -13,7 +13,7 @@
         @endforeach
 
         @if ($favicon = $site->theme->setting('favicon'))
-            <link rel="favicon" href="{{ $favicon }}" />
+            <link rel="icon" href="{{ $favicon }}" />
         @endif
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
