@@ -1,4 +1,8 @@
-@extends('layouts.default')
+@extends('layouts.default', [
+    'meta' => [
+        'title' => $entry->title,
+    ],
+])
 
 @section('content')
     <section class="section">
