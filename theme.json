@@ -16,6 +16,12 @@
       "title": "Logo",
       "help": "Upload your site's logo file",
       "type": "file"
+    },
+    {
+      "name": "favicon",
+      "title": "Favicon",
+      "help": "Upload your site's favicon file",
+      "type": "file"
     }
   ],
   "config": {
