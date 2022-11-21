@@ -30,7 +30,7 @@
     </div>
 
     @isset($entry->cover, $entry->cover->url)
-        <figure class="entry-cover image">
+        <figure class="entry-cover image block">
             <img
                 src="{{ $entry->cover->url }}"
                 alt="{{ $entry->title }}"
