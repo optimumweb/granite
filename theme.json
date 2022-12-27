@@ -10,6 +10,18 @@
       "title": "Footer Menu"
     }
   ],
+  "blockLocations": [
+    {
+      "name": "header_code",
+      "title": "Header Code",
+      "description": "Code that will be inserted at the end of the <head> section."
+    },
+    {
+      "name": "footer_code",
+      "title": "Footer Code",
+      "description": "Code that will be inserted at the end of the <body> section."
+    }
+  ],
   "settings": [
     {
       "name": "logo",
