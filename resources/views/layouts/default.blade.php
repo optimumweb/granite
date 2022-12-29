@@ -28,7 +28,7 @@
 
         <script src="{{ $site->theme->asset('js/theme.js') }}" defer></script>
 
-        {!! $site->blocks('header_code')->render() !!}
+        {!! $site->blocks('header_code')->get()->render() !!}
     </head>
     <body>
         <header id="site-header" class="hero is-primary">
@@ -71,6 +71,6 @@
             </div>
         </footer>
 
-        {!! $site->blocks('footer_code')->render() !!}
+        {!! $site->blocks('footer_code')->get()->render() !!}
     </body>
 </html>
