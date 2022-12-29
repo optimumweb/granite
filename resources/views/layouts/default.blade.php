@@ -27,6 +27,8 @@
         @endif
 
         <script src="{{ $site->theme->asset('js/theme.js') }}" defer></script>
+
+        {!! $site->blocks('header_code')->render() !!}
     </head>
     <body>
         <header id="site-header" class="hero is-primary">
@@ -68,5 +70,7 @@
                 <p id="copy">&copy; {{ $site->name }} {{ now()->format('Y') }}</p>
             </div>
         </footer>
+
+        {!! $site->blocks('footer_code')->render() !!}
     </body>
 </html>
