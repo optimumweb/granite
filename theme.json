@@ -14,12 +14,14 @@
     {
       "name": "header_code",
       "title": "Header Code",
-      "description": "Code that will be inserted at the end of the <head> section."
+      "description": "Code that will be inserted at the end of the <head> section.",
+      "defaultEditorMode": "code"
     },
     {
       "name": "footer_code",
       "title": "Footer Code",
-      "description": "Code that will be inserted at the end of the <body> section."
+      "description": "Code that will be inserted at the end of the <body> section.",
+      "defaultEditorMode": "code"
     }
   ],
   "settings": [
