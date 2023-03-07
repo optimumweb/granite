@@ -1,5 +1,5 @@
 <nav
-    id="menu-{{ $menu->location }}"s
+    id="menu-{{ $menu->location }}"
     class="menu"
     role="navigation"
 >
