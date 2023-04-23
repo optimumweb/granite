@@ -39,7 +39,7 @@
                             <div class="level-item">
                                 <div id="site-title">
                                     <h1 id="site-name" class="title">
-                                        <a href="{{ $site->home() }}">
+                                        <a href="{{ $site->path() }}">
                                             {{ $site->name }}
                                         </a>
                                     </h1>
