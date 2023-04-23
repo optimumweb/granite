@@ -70,7 +70,7 @@
                     <div class="column is-9">
                         <div class="level">
                             <div class="level-left"></div>
-                            
+
                             <div class="level-right">
                                 <div class="level-item">
                                     {!! $site->menu('primary') !!}
