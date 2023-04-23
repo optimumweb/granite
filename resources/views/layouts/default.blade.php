@@ -38,15 +38,26 @@
                         <div class="level-left">
                             <div class="level-item">
                                 <div id="site-title">
-                                    <h1 id="site-name" class="title">
-                                        <a href="{{ $site->path() }}">
-                                            {{ $site->name }}
-                                        </a>
-                                    </h1>
+                                    @if ($siteLogo = $site->setting('logo'))
+                                        <h1 id="site-logo">
+                                            <a href="{{ $site->path() }}">
+                                                <img
+                                                    src="{{ $site->storageUrl($siteLogo) }}"
+                                                    alt="{{ $site->name }} - {{ $site->description }}"
+                                                />
+                                            </a>
+                                        </h1>
+                                    @else
+                                        <h1 id="site-name" class="title">
+                                            <a href="{{ $site->path() }}">
+                                                {{ $site->name }}
+                                            </a>
+                                        </h1>
 
-                                    <h2 id="site-description">
-                                        {{ $site->description }}
-                                    </h2>
+                                        <h2 id="site-description">
+                                            {{ $site->description }}
+                                        </h2>
+                                    @endif
                                 </div>
                             </div>
                         </div>
