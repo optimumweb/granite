@@ -327,7 +327,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Inter", sans-serif;
+  font-family: var(--family-sans-serif, sans-serif);
 }
 
 code,
@@ -9254,15 +9254,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .is-family-primary {
-  font-family: "Inter", sans-serif !important;
+  font-family: var(--family-sans-serif, sans-serif) !important;
 }
 
 .is-family-secondary {
-  font-family: "Inter", sans-serif !important;
+  font-family: var(--family-sans-serif, sans-serif) !important;
 }
 
 .is-family-sans-serif {
-  font-family: "Inter", sans-serif !important;
+  font-family: var(--family-sans-serif, sans-serif) !important;
 }
 
 .is-family-monospace {

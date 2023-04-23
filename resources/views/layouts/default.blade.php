@@ -16,9 +16,17 @@
             <link rel="icon" href="{{ $favicon }}" />
         @endif
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+        @if ($fontFamily = $site->setting('font_family'))
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family={{ $fontFamily }}:wght@300;400;700&display=swap" rel="stylesheet">
+        @endif
+
+        <style>
+            :root {
+                --family-sans-serif: {{ $fontFamily }}, sans-serif;
+            }
+        </style>
 
         <link rel="stylesheet" href="{{ $site->theme->asset('css/theme.css') }}">
 

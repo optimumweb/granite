@@ -1,44 +1,51 @@
 {
-  "name": "limestonesoftware/granite",
-  "menuLocations": [
-    {
-      "name": "primary",
-      "title": "Primary Menu"
-    },
-    {
-      "name": "footer",
-      "title": "Footer Menu"
+    "name": "limestonesoftware/granite",
+    "menuLocations": [
+        {
+            "name": "primary",
+            "title": "Primary Menu"
+        },
+        {
+            "name": "footer",
+            "title": "Footer Menu"
+        }
+    ],
+    "blockLocations": [
+        {
+            "name": "header_code",
+            "title": "Header Code",
+            "description": "Code that will be inserted at the end of the <head> section.",
+            "defaultEditorMode": "code"
+        },
+        {
+            "name": "footer_code",
+            "title": "Footer Code",
+            "description": "Code that will be inserted at the end of the <body> section.",
+            "defaultEditorMode": "code"
+        }
+    ],
+    "settings": [
+        {
+            "name": "logo",
+            "title": "Logo",
+            "help": "Upload your site's logo file",
+            "type": "file"
+        },
+        {
+            "name": "favicon",
+            "title": "Favicon",
+            "help": "Upload your site's favicon file",
+            "type": "file"
+        },
+        {
+            "name": "font_family",
+            "title": "Font Family",
+            "help": "Select from a Google Fonts family",
+            "type": "text",
+            "default": "Inter"
+        }
+    ],
+    "config": {
+        "fontawesome": "54c8dbf8b5"
     }
-  ],
-  "blockLocations": [
-    {
-      "name": "header_code",
-      "title": "Header Code",
-      "description": "Code that will be inserted at the end of the <head> section.",
-      "defaultEditorMode": "code"
-    },
-    {
-      "name": "footer_code",
-      "title": "Footer Code",
-      "description": "Code that will be inserted at the end of the <body> section.",
-      "defaultEditorMode": "code"
-    }
-  ],
-  "settings": [
-    {
-      "name": "logo",
-      "title": "Logo",
-      "help": "Upload your site's logo file",
-      "type": "file"
-    },
-    {
-      "name": "favicon",
-      "title": "Favicon",
-      "help": "Upload your site's favicon file",
-      "type": "file"
-    }
-  ],
-  "config": {
-    "fontawesome": "54c8dbf8b5"
-  }
 }
