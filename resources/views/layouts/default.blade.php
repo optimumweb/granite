@@ -31,40 +31,40 @@
         {!! $site->blocks('header_code')->get()->render() !!}
     </head>
     <body>
-        <header id="site-header" class="hero is-primary">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="level">
-                        <div class="level-left">
-                            <div class="level-item">
-                                <div id="site-title">
-                                    @if ($siteLogo = $site->setting('logo'))
-                                        <h1 id="site-logo">
-                                            <a href="{{ $site->path() }}">
-                                                <img
-                                                    src="{{ $site->storageUrl($siteLogo) }}"
-                                                    alt="{{ $site->name }} - {{ $site->description }}"
-                                                />
-                                            </a>
-                                        </h1>
-                                    @else
-                                        <h1 id="site-name" class="title">
-                                            <a href="{{ $site->path() }}">
-                                                {{ $site->name }}
-                                            </a>
-                                        </h1>
+        <header id="site-header" class="section">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-3">
+                        <div id="site-title">
+                            @if ($siteLogo = $site->setting('logo'))
+                                <h1 id="site-logo">
+                                    <a href="{{ $site->path() }}">
+                                        <img
+                                            src="{{ $site->storageUrl($siteLogo) }}"
+                                            alt="{{ $site->name }} - {{ $site->description }}"
+                                        />
+                                    </a>
+                                </h1>
+                            @else
+                                <h1 id="site-name" class="title">
+                                    <a href="{{ $site->path() }}">
+                                        {{ $site->name }}
+                                    </a>
+                                </h1>
 
-                                        <h2 id="site-description">
-                                            {{ $site->description }}
-                                        </h2>
-                                    @endif
-                                </div>
-                            </div>
+                                <h2 id="site-description">
+                                    {{ $site->description }}
+                                </h2>
+                            @endif
                         </div>
+                    </div>
 
-                        <div class="level-right">
-                            <div class="level-item">
-                                {!! $site->menu('primary') !!}
+                    <div class="column is-9">
+                        <div class="level">
+                            <div class="level-right">
+                                <div class="level-item">
+                                    {!! $site->menu('primary') !!}
+                                </div>
                             </div>
                         </div>
                     </div>
