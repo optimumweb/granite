@@ -10380,3 +10380,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   text-transform: uppercase;
   letter-spacing: 0.125em;
 }
+
+.menu > li {
+  display: inline-block;
+}
