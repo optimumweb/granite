@@ -87,8 +87,20 @@
         </main>
 
         <footer id="site-footer" class="footer">
-            <div class="content has-text-centered">
-                <p id="copy">&copy; {{ $site->name }} {{ now()->format('Y') }}</p>
+            <div class="container">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p id="copy">&copy; {{ $site->name }} {{ now()->format('Y') }}</p>
+                        </div>
+                    </div>
+
+                    <div class="level-right">
+                        <div class="level-item">
+                            {!! $site->menu('footer') !!}
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
 
