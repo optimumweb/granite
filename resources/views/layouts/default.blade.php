@@ -16,7 +16,7 @@
             <link rel="icon" href="{{ $favicon }}" />
         @endif
 
-        @if ($fontFamily = $site->setting('font_family'))
+        @if ($fontFamily = $site->theme->setting('font_family'))
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family={{ $fontFamily }}:wght@300;400;700&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
                 <div class="columns is-vcentered">
                     <div class="column is-3">
                         <div id="site-title">
-                            @if ($siteLogo = $site->setting('logo'))
+                            @if ($siteLogo = $site->theme->setting('logo'))
                                 <h1 id="site-logo">
                                     <a href="{{ $site->path() }}">
                                         <img
