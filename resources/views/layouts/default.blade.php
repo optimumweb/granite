@@ -48,7 +48,7 @@
                                 <h1 id="site-logo">
                                     <a href="{{ $site->path() }}">
                                         <img
-                                            src="{{ $siteLogo }}"
+                                            src="{{ storageUrl($siteLogo) }}"
                                             alt="{{ $site->name }} - {{ $site->description }}"
                                         />
                                     </a>
