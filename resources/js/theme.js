@@ -1,4 +1,4 @@
-import * as $ from 'jquery';
+window.$ = window.jQuery = require('jquery');
 
 $(document).ready(function () {
     $('.file').each(function () {
