@@ -1,9 +1,10 @@
 <form
-    id="form-{{ $form->id }}"
-    class="form"
+    id="form-{{ $form->name }}"
+    class="form {{ $form->grecaptcha_enabled ? 'grecaptcha-enabled' : '' }}"
     action="{{ $form->action }}"
     method="{{ $form->method }}"
     enctype="multipart/form-data"
+    data-grecaptcha-site-key="{{ $form->grecaptcha_site_key }}"
 >
     @csrf
 
@@ -36,3 +37,9 @@
         {{ site()->trans('forms.submit') }}
     </button>
 </form>
+
+@if ($form->grecaptcha_enabled && isset($form->grecaptcha_site_key))
+    <!-- Google reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render={{ $form->grecaptcha_site_key }}"></script>
+    <!-- /Google reCAPTCHA v3 -->
+@endif
