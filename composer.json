@@ -1,12 +1,12 @@
 {
-  "name": "limestonesoftware/granite",
+  "name": "optimumweb/granite",
   "type": "library",
   "description": "Mason CMS default theme",
   "keywords": ["framework", "laravel", "cms", "mason", "theme"],
   "authors": [
     {
       "name": "Jonathan Roy",
-      "email": "jonathan@limestone.dev",
+      "email": "jroy@optimumweb.ca",
       "role": "developer"
     }
   ],
