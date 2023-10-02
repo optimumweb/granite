@@ -12,7 +12,5 @@
             placeholder="{{ $field->placeholder }}"
             {{ $field->is_required ? 'required' : '' }}
         >{!! $field->old($field->default_value) !!}</textarea>
-        
-        @include('forms.fields.partials.input', ['type' => $field->type])
     </div>
 </div>
