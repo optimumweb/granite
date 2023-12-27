@@ -82,18 +82,8 @@
             </div>
         </header>
 
-        <main id="site-content" class="section">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-8">
-                        @yield('content')
-                    </div>
-
-                    <div class="column is-4">
-                        {!! $site->blocks('sidebar')->get()->render() !!}
-                    </div>
-                </div>
-            </div>
+        <main id="site-content">
+            @yield('content')
         </main>
 
         <footer id="site-footer" class="footer">

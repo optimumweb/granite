@@ -22,12 +22,6 @@
             "title": "Footer Code",
             "description": "Code that will be inserted at the end of the <body> section.",
             "defaultEditorMode": "code"
-        },
-        {
-            "name": "sidebar",
-            "title": "Sidebar",
-            "description": "Code that will be inserted on the side of every page.",
-            "defaultEditorMode": "code"
         }
     ],
     "settings": [
