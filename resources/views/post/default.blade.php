@@ -5,9 +5,5 @@
 ])
 
 @section('content')
-    <section class="section">
-        <div class="container">
-            @include('partials.post')
-        </div>
-    </section>
+    @include('post.entry')
 @endsection

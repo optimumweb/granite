@@ -43,7 +43,7 @@
             <div class="container">
                 <div class="columns is-vcentered">
                     <div class="column is-3">
-                        <div id="site-title">
+                        <hgroup id="site-title">
                             @if ($siteLogo = $site->theme->setting('logo'))
                                 <h1 id="site-logo">
                                     <a href="{{ $site->path() }}">
@@ -64,7 +64,7 @@
                                     {{ $site->description }}
                                 </h2>
                             @endif
-                        </div>
+                        </hgroup>
                     </div>
 
                     <div class="column is-9">
@@ -82,8 +82,18 @@
             </div>
         </header>
 
-        <main id="site-content">
-            @yield('content')
+        <main id="site-content" class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8">
+                        @yield('content')
+                    </div>
+
+                    <div class="column is-4">
+                        {!! $site->blocks('sidebar')->get()->render() !!}
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer id="site-footer" class="footer">
