@@ -48,38 +48,32 @@
                     itemprop="abstract"
                 >
                     <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <h3 class="title is-3">
-                                    {{ site()->trans('entries.author.title') }}
-                                </h3>
+                        <figure class="image is-128x128 is-pulled-right">
+                            @isset($entry->author->photo?->url)
+                                <img
+                                    class="is-rounded is-constrained"
+                                    src="{{ $entry->author->photo->url }}"
+                                    width="{{ $entry->author->photo->image_width }}"
+                                    height="{{ $entry->author->photo->image_height }}"
+                                    alt="{{ $entry->author }}"
+                                />
+                            @else
+                                <img
+                                    class="is-rounded"
+                                    src="{{ $entry->author->gravatar_url }}?s=128"
+                                    width="128"
+                                    height="128"
+                                    alt="{{ $entry->author }}"
+                                />
+                            @endisset
+                        </figure>
 
-                                <div class="entry-author-bio content block">
-                                    {!! $authorProfile->bio !!}
-                                </div>
-                            </div>
+                        <h3 class="title is-3">
+                            {{ site()->trans('entries.author.title') }}
+                        </h3>
 
-                            <div class="media-right">
-                                <figure class="image is-128x128">
-                                    @isset($entry->author->photo?->url)
-                                        <img
-                                            class="is-rounded"
-                                            src="{{ $entry->author->photo->url }}"
-                                            width="{{ $entry->author->photo->image_width }}"
-                                            height="{{ $entry->author->photo->image_height }}"
-                                            alt="{{ $entry->author }}"
-                                        />
-                                    @else
-                                        <img
-                                            class="is-rounded"
-                                            src="{{ $entry->author->gravatar_url }}?s=128"
-                                            width="128"
-                                            height="128"
-                                            alt="{{ $entry->author }}"
-                                        />
-                                    @endisset
-                                </figure>
-                            </div>
+                        <div class="entry-author-bio content block">
+                            {!! $authorProfile->bio !!}
                         </div>
 
                         @if ($entry->author->links->count() > 0)
