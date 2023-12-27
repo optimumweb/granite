@@ -5,7 +5,18 @@
     itemtype="https://schema.org/Article"
 >
     <div class="card block">
-        @include('post.cover')
+        @isset($entry->cover)
+            <div class="card-image">
+                <figure class="entry-cover image block">
+                    <img
+                        src="{{ $entry->cover->url }}"
+                        width="{{ $entry->cover->image_width }}"
+                        height="{{ $entry->cover->image_height }}"
+                        alt="{{ $entry->title }}"
+                    />
+                </figure>
+            </div>
+        @endisset
 
         <div class="card-content">
             <h1
