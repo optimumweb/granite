@@ -7,7 +7,7 @@
     <div class="card">
         @isset($entry->cover)
             <div class="card-image">
-                <figure class="entry-cover image is-3by1 block">
+                <figure class="entry-cover image is-16by9 block">
                     <a href="{!! $entry->url !!}">
                         <img
                             class="is-constrained"
