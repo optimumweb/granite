@@ -7,8 +7,9 @@
     <div class="card block">
         @isset($entry->cover)
             <div class="card-image">
-                <figure class="entry-cover image block">
+                <figure class="entry-cover image is-16by9 block">
                     <img
+                        class="is-constrained"
                         src="{{ $entry->cover->url }}"
                         width="{{ $entry->cover->image_width }}"
                         height="{{ $entry->cover->image_height }}"
