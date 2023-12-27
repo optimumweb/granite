@@ -35,7 +35,7 @@
                         class="entry-content content block"
                         itemprop="articleBody"
                     >
-                        {!! $entry->content !!}
+                        {!! $entry->html !!}
                     </div>
                 </div>
             </div>

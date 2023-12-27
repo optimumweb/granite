@@ -5,5 +5,5 @@
 ])
 
 @section('content')
-    @include('partials.page')
+    {!! $entry->html !!}
 @endsection
