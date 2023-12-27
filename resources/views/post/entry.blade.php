@@ -57,23 +57,6 @@
                                 <div class="entry-author-bio content block">
                                     {!! $authorProfile->bio !!}
                                 </div>
-
-                                @if ($entry->author->links->count() > 0)
-                                    <div class="entry-author-links field is-grouped is-grouped-multiline">
-                                        @foreach ($entry->author->links as $authorLink)
-                                            <div class="control">
-                                                <a
-                                                    class="button"
-                                                    href="{{ $authorLink->url }}"
-                                                    target="_blank"
-                                                >
-                                                    <span>{{ $authorLink->title }}</span>
-                                                    <span class="icon"><i class="fas fa-external-link"></i></span>
-                                                </a>
-                                            </div>
-                                        @endforeach
-                                    </div>
-                                @endif
                             </div>
 
                             <div class="media-right">
@@ -98,6 +81,23 @@
                                 </figure>
                             </div>
                         </div>
+
+                        @if ($entry->author->links->count() > 0)
+                            <div class="entry-author-links field is-grouped is-grouped-multiline">
+                                @foreach ($entry->author->links as $authorLink)
+                                    <div class="control">
+                                        <a
+                                            class="button"
+                                            href="{{ $authorLink->url }}"
+                                            target="_blank"
+                                        >
+                                            <span>{{ $authorLink->title }}</span>
+                                            <span class="icon"><i class="fas fa-external-link"></i></span>
+                                        </a>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
