@@ -42,7 +42,7 @@
         <header id="site-header" class="section">
             <div class="container">
                 <div class="columns is-vcentered">
-                    <div class="column is-3">
+                    <div class="column is-3 has-text-centered-mobile">
                         <hgroup id="site-title">
                             @if ($siteLogo = $site->theme->setting('logo'))
                                 <h1 id="site-logo">
