@@ -21,7 +21,7 @@
         "sass-loader": "^12.6.0"
     },
     "dependencies": {
-        "bulma": "^0.9.4",
+        "bulma": "^1.0.1",
         "jquery": "1.11"
     }
 }
