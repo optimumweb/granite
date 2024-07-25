@@ -4009,7 +4009,7 @@ button.dropdown-item.is-active {
 }
 .level.is-mobile .level-item:not(:last-child) {
   margin-bottom: 0;
-  margin-right: 0.75rem;
+  margin-right: 2rem;
 }
 .level.is-mobile .level-item:not(.is-narrow) {
   flex-grow: 1;
@@ -4037,7 +4037,7 @@ button.dropdown-item.is-active {
 }
 @media screen and (max-width: 768px) {
   .level-item:not(:last-child) {
-    margin-bottom: 0.75rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -4054,7 +4054,7 @@ button.dropdown-item.is-active {
 @media screen and (min-width: 769px), print {
   .level-left .level-item:not(:last-child),
   .level-right .level-item:not(:last-child) {
-    margin-right: 0.75rem;
+    margin-right: 2rem;
   }
 }
 
