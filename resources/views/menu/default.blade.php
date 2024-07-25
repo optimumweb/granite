@@ -3,9 +3,9 @@
     class="menu is-medium"
     role="navigation"
 >
-    <ul>
+    <div class="level">
         @foreach ($menu->root_items as $item)
             @include('menu.item', ['item' => $item, 'depth' => 0])
         @endforeach
-    </ul>
+    </div>
 </nav>

@@ -2,6 +2,16 @@ window.$ = window.jQuery = require('jquery');
 
 $(document)
     .ready(function () {
+        $('.menu-toggle').on('click', function (e) {
+            e.preventDefault();
+
+            let $toggle = $(this),
+                href = $toggle.attr('href'),
+                $menu = $(href);
+
+            $menu.toggleClass('is-hidden-mobile');
+        });
+
         $('.file').each(function () {
             let $file = $(this),
                 $fileInput = $file.find('.file-input'),

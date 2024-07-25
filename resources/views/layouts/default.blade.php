@@ -41,41 +41,45 @@
     <body>
         <header id="site-header" class="section">
             <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column is-3 has-text-centered-mobile">
-                        <hgroup id="site-title">
-                            @if ($siteLogo = $site->theme->setting('logo'))
-                                <h1 id="site-logo">
-                                    <a href="{{ $site->path() }}">
-                                        <img
-                                            src="{{ storageUrl($siteLogo) }}"
-                                            alt="{{ $site->name }} - {{ $site->description }}"
-                                        />
-                                    </a>
-                                </h1>
-                            @else
-                                <h1 id="site-name" class="title">
-                                    <a href="{{ $site->path() }}">
-                                        {{ $site->name }}
-                                    </a>
-                                </h1>
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item is-justify-content-space-between">
+                            <hgroup id="site-title">
+                                @if ($siteLogo = $site->theme->setting('logo'))
+                                    <h1 id="site-logo">
+                                        <a href="{{ $site->path() }}">
+                                            <img
+                                                src="{{ storageUrl($siteLogo) }}"
+                                                alt="{{ $site->name }} - {{ $site->description }}"
+                                            />
+                                        </a>
+                                    </h1>
+                                @else
+                                    <h1 id="site-name" class="title">
+                                        <a href="{{ $site->path() }}">
+                                            {{ $site->name }}
+                                        </a>
+                                    </h1>
 
-                                <h2 id="site-description">
-                                    {{ $site->description }}
-                                </h2>
-                            @endif
-                        </hgroup>
+                                    <h2 id="site-description">
+                                        {{ $site->description }}
+                                    </h2>
+                                @endif
+                            </hgroup>
+
+                            <a
+                                class="menu-toggle icon is-large is-hidden-tablet"
+                                href="#site-header-menu"
+                            ><i class="fas fa-bars fa-xl"></i></a>
+                        </div>
                     </div>
 
-                    <div class="column is-9">
-                        <div class="level">
-                            <div class="level-left"></div>
-
-                            <div class="level-right">
-                                <div class="level-item">
-                                    {!! $site->menu('primary') !!}
-                                </div>
-                            </div>
+                    <div
+                        id="site-header-menu"
+                        class="level-right is-hidden-mobile"
+                    >
+                        <div class="level-item">
+                            {!! $site->menu('primary') !!}
                         </div>
                     </div>
                 </div>

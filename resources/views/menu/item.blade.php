@@ -1,4 +1,4 @@
-<li>
+<div class="level-item">
     <a
         href="{{ $item->href }}"
         class="{{ $item->metadata['class'] ?? '' }}"
@@ -15,4 +15,4 @@
             @endforeach
         </ul>
     @endif
-</li>
+</div>

@@ -1,6 +1,6 @@
 @extends('layouts.default', [
     'meta' => [
-        'title' => $entry?->title ?? $site->description,
+        'title' => $entry?->metadata['title'] ?? $entry?->title ?? $site->description,
     ],
 ])
 
