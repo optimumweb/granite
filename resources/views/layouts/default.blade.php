@@ -43,7 +43,7 @@
             <div class="container">
                 <div class="level">
                     <div class="level-left">
-                        <div class="level-item is-justify-content-space-between">
+                        <div class="level-item is-justify-content-space-around">
                             <hgroup id="site-title">
                                 @if ($siteLogo = $site->theme->setting('logo'))
                                     <h1 id="site-logo">
